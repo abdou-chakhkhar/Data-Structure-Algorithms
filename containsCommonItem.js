@@ -10,8 +10,10 @@
 // 2 parameters - arrays - no size limit
 // return true or false
 
+//O(a*b) - Time Complexity 
+//O(1) - Space Complexity
 
-function containsCommonItem(arr1, arr2){ //O(a*b) // Space complexity: O(1)
+function containsCommonItem(arr1, arr2){ 
   for(let i = 0; i < arr1.length; i++){
       for(let j = 0; j < arr2.length; j++){
          if(arr1[i] === arr2[j]){
@@ -23,6 +25,10 @@ function containsCommonItem(arr1, arr2){ //O(a*b) // Space complexity: O(1)
   console.log("false")
   return false;
 }
+
+
+//O(a + b) Time Complexity
+//O(a) Space Complexity
 
 function containsCommonItem1(arr1, arr2){ 
   let map = {};
